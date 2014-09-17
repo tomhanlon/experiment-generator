@@ -1,7 +1,8 @@
 require "clearhead/version"
+require 'fileutils'
 
 module Clearhead
-  require 'fileutils'
+
 
   puts "
    ######  ##       ########    ###    ########  ##     ## ########    ###    ########
