@@ -1,6 +1,6 @@
-require 'rubygems'
-require "clearhead/version"
 require 'fileutils'
+require "clearhead/version"
+
 
 module Clearhead
 
