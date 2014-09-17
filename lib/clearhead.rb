@@ -31,11 +31,11 @@ module Clearhead
   global_css = gets.chomp.downcase
 
   if global_css == "yes"
-    File.write("#{experiment_name}/css/#{experiment_name}-v#{variation + 1}.css", "
+    File.write("#{experiment_name}/css/#{experiment_name}-global.css", "
     /*--------------------------------------------
      *
-     *  test: #{experiment_name}
-     *  description: #{description} - global-css
+     *  test: #{experiment_name}-global-css
+     *  description: #{description}
      *  author: #{author_name}
      *
      * ------------------------------------------*/
@@ -48,8 +48,8 @@ module Clearhead
     File.write("#{experiment_name}/js/#{experiment_name}-v#{variation + 1}.js", "
     /*--------------------------------------------
      *
-     *  test: #{experiment_name}
-     *  description: #{description} - v#{variation + 1}.js
+     *  test: #{experiment_name}-v#{variation + 1}.js
+     *  description: #{description}
      *  author: #{author_name}
      *
      * ------------------------------------------*/
@@ -58,8 +58,8 @@ module Clearhead
     File.write("#{experiment_name}/css/#{experiment_name}-v#{variation + 1}.css", "
     /*--------------------------------------------
      *
-     *  test: #{experiment_name}
-     *  description: #{description} - v#{variation + 1}.css
+     *  test: #{experiment_name}-v#{variation + 1}.css
+     *  description: #{description}
      *  author: #{author_name}
      *
      * ------------------------------------------*/
