@@ -1,7 +1,6 @@
 require 'fileutils'
 require "clearhead/version"
 
-
 module Clearhead
 
 
